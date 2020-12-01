@@ -1,0 +1,9 @@
+@startuml
+RedissonTomcat9 --|> Redisson
+Redisson --|> ReactorCore
+ReactorCore --|> ReactiveStreams
+SpringMvc --|> ReactiveAdapterRegistry
+ReactiveAdapterRegistry --|> ReactorCore
+ReactiveAdapterRegistry --|> ReactiveStreams
+SpringWebFlux --|> ReactorCore
+@enduml
